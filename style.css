@@ -39,8 +39,12 @@
   padding: 20px 40px;
   border: none;
   border-radius: 8px;
+  transition: transform 1s;
 }
-
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.09);
+}
 /* navbar */
 nav {
   margin-top: 50px;
@@ -70,13 +74,34 @@ nav a {
   gap: 90px;
   padding-top: 50px;
 }
+
+@keyframes banner-ani {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  50% {
+    color: orange;
+    opacity: 0.5;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.banner-left {
+  animation: banner-ani 1s ease-out forwards;
+}
 .banner-container img {
   width: 100%;
 }
+
 .banner-left p {
   margin-top: 32px;
   margin-bottom: 32px;
 }
+
 .banner-title {
   font-size: 5rem;
   font-weight: 900;
@@ -103,6 +128,10 @@ nav a {
 }
 .card {
   margin: auto;
+  transition: transform 1s;
+}
+.card:hover {
+  transform: scale(1.09);
 }
 .card-contant {
   width: 465px;
@@ -230,6 +259,10 @@ nav a {
   background-color: #e55473;
   padding: 20px 40px;
   border: none;
+}
+.subcribe-btn:hover {
+  cursor: pointer;
+  background-color: black;
 }
 
 /* footer */
