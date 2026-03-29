@@ -155,6 +155,83 @@ nav a {
   margin-bottom: 24px;
 }
 
+/* deals */
+.deals-section {
+  background-color: rgba(229, 84, 115, 0.05);
+  margin: 100px 0;
+}
+.deals-container {
+  justify-content: center;
+  align-items: center;
+  gap: 180px;
+  padding: 50px;
+}
+.deals-left {
+  max-width: 600px;
+  text-align: center;
+}
+.deals-left p {
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+/* instagram */
+.instagram-container {
+  max-width: 1440px;
+  margin: auto;
+}
+.instagram-contant {
+  text-align: center;
+}
+.instagram-contant p {
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+.instagram-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* latest deal */
+.latest-deal-container {
+  background-image: url(./Flower\ Asset/Rectangle-9.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1440px;
+  margin: 100px auto;
+  padding: 100px;
+}
+.latest-deal-contant {
+  text-align: center;
+}
+.latest-deal-contant p {
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+.email-submit {
+  max-width: 50%;
+  margin: auto;
+  justify-content: center;
+}
+.email-submit input {
+  width: 700px;
+  padding: 22px;
+  outline: none;
+  border: none;
+}
+.subcribe-btn {
+  width: fit-content;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+  background-color: #e55473;
+  padding: 20px 40px;
+  border: none;
+}
+
 /* mediaquary */
 
 @media screen and (max-width: 576px) {
@@ -167,7 +244,8 @@ nav a {
   .secondary-heading {
     font-size: 2rem;
   }
-  .banner-container {
+  .banner-container,
+  .deals-container {
     flex-direction: column-reverse;
   }
   .featured-card-container,
@@ -180,7 +258,27 @@ nav a {
     padding: 20px 20px 0 20px;
   }
 
-  /* about */
+  /* deals */
+  .deals-container,
+  .instagram-container {
+    padding: 20px;
+  }
+
+  .instagram-card {
+    grid-template-columns: 1fr;
+  }
+
+  /* latest deal */
+  .latest-deal-container {
+    padding: 30px;
+  }
+  .email-submit input {
+    padding: 0;
+    padding-left: 10px;
+  }
+  .subcribe-btn {
+    padding: 20px;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -195,5 +293,12 @@ nav a {
   }
   .featured-card-container {
     flex-direction: column;
+  }
+  /* deals */
+  .deals-container {
+    gap: 100px;
+  }
+  .instagram-card {
+    grid-template-columns: repeat(2, auto);
   }
 }
