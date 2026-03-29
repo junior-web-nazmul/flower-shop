@@ -232,6 +232,37 @@ nav a {
   border: none;
 }
 
+/* footer */
+footer {
+  background-color: black;
+}
+.footer-contant {
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 120px 0;
+}
+.footer-heading {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: white;
+}
+.footer-heading span {
+  color: #e55473;
+}
+.footer-description {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: white;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+.copy-right {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.4);
+}
+
 /* mediaquary */
 
 @media screen and (max-width: 576px) {
@@ -279,6 +310,12 @@ nav a {
   .subcribe-btn {
     padding: 20px;
   }
+
+  /* footer */
+  .footer-contant {
+    max-width: 100%;
+    padding: 80px 20px;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -300,5 +337,10 @@ nav a {
   }
   .instagram-card {
     grid-template-columns: repeat(2, auto);
+  }
+
+  /* footer */
+  .footer-contant {
+    max-width: 80%;
   }
 }
