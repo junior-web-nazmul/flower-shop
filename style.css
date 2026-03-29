@@ -138,6 +138,23 @@ nav a {
   margin-top: 32px;
 }
 
+/* about */
+.about-container {
+  max-width: 1440px;
+  margin: auto;
+  background-color: rgba(39, 39, 39, 0.05);
+}
+.about-contant {
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding: 60px 0;
+  text-align: center;
+}
+.about-contant img {
+  margin-bottom: 24px;
+}
+
 /* mediaquary */
 
 @media screen and (max-width: 576px) {
@@ -153,7 +170,8 @@ nav a {
   .banner-container {
     flex-direction: column-reverse;
   }
-  .featured-card-container {
+  .featured-card-container,
+  .about-contant {
     flex-direction: column;
   }
   .card-contant {
@@ -161,6 +179,8 @@ nav a {
     height: fit-content;
     padding: 20px 20px 0 20px;
   }
+
+  /* about */
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
